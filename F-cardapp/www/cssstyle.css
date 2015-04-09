@@ -1,43 +1,30 @@
-    
-/* Style index page */
-
-    #btnsigneup{
-      padding-top: 70px;
-    }
-    body{
-    background-color: #003333;
+body{
+  background-color: #F7F7F7;
 }
-       #connectBtn{
-            padding-top: 2px;
-            padding-right: 90px;
-            padding-left: 90px;
-         }
-        #connectinfo{
-          padding-top: 190px;
-          padding-left: 60px;
-          padding-right: 60px; 
-        }
-        #signe_forgot{
-           padding-top: 0px;
-           padding-left: 100px;
-           padding-right: 100px;
-         } 
-       #appName{
-        padding-top: 90px;
-       }
-       h6{
-        color: green;
-       }
-/* ____________________________________________________________________________________________________*/
+   .list{
+     padding-top: 160px;
+     padding-right: 50px;
+     padding-left: 50px;
+   }
 
-/* Style signe up */
-       h1{
-        color: yellow;
-       }
+   .item.item-input{
+    box-shadow: 5px 5px 5px gray;
+   }
+   .button-bar{
+     padding-right: 50px;
+     padding-left: 50px;
+   }
 
-       #createacountinfo{
-        padding-top: 170px;
-        padding-left: 60px;
-        padding-right: 60px; 
+   .signe_forgot{
+    margin-right: 40px;
+   }
 
-       }
+  .button.button-full.button-assertive{
+      box-shadow: 5px 5px 5px gray;
+     }
+  .button.button-full.button-dark{
+    box-shadow: 5px 5px 5px gray;
+    font-size: 90%;
+    margin-top: 0px;
+  }  
+

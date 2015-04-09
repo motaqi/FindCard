@@ -7,6 +7,7 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="cssstyle.css" rel="stylesheet">
 
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -15,9 +16,12 @@
     <script src="js/app.js"></script>
   </head>
 
-  <body ng-app="starter" class="platform-android platform-cordova platform-webview">
+  <body id="bodyindex" class="platform-android platform-cordova platform-webview">
+  <div class="signup-background">
     <ion-pane>
+      <div>
          <div class="list" id="connectinfo">
+         <p><h6>your password or your email is not correct</h6></p>
               <label class="item item-input">
                  <input type="text" placeholder="Email">
               </label>
@@ -25,35 +29,19 @@
               <input type="password" placeholder="Password">
               </label>
         </div>
-        <div id="connect"class="button-bar">
+        </div>
+        <div id="connectBtn"class="button-bar">
              <a class="button button-full button-positive">Connect</a>
         </div>
-        <div id="createacount">
-           <a class="button">Create acount</a>
+        <div id="signe_forgot">
+          <span><a class="button button-small button-stable" href="createacount.html">signe up</a> <a class="button button-small button-stable" href="forgotpassword.html">forgot password</a></span>
         </div>
-      </ion-content>
+      </ion-content>   
     </ion-pane>
+    </div>
     <style>
-    body {
-    
-    }
-
-       #connect{
-            padding-top: 0px;
-            padding-right: 110px;
-            padding-left: 110px;
-         }
-        #connectinfo{
-          padding-top: 190px;
-          padding-left: 60px;
-          padding-right: 60px; 
-        }
-        #createacount{
-           padding-top: 2px;
-           padding-right: 120px;
-            padding-left: 120px;
-            padding-bottom: 0px;
-         } 
     </style>
   </body>
 </html>
+
+
