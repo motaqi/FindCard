@@ -1,0 +1,10 @@
+<ion-view view-title="Names">
+  <ion-content>
+  <ion-refresher pulling-text="actualiser" on-refresh="doRefresh()"></ion-refresher>
+    <ul class="list">
+    <li class="item" ng-repeat="var in cardslist">
+       {{var}}
+    </li>
+</ul>
+  </ion-content>
+</ion-view>
