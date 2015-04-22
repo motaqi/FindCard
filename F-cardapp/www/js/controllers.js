@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('BrowseCtrl', function($scope){
-  $scope.title = "Dynamique";
+  $scope.title = "Favorites";
   $scope.cardslist = ["Mehdi","omar","khalid","nourdine"];
   
 
@@ -44,6 +44,10 @@ angular.module('starter.controllers', [])
 
 .controller('CardslistCtrl', function($scope,Cardservice) {
    $scope.cardslist = Cardservice.getAll();
+})
+
+.controller('NewcardCtrl', function($scope) {
+   
 })
 
 

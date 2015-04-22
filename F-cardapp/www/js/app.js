@@ -22,7 +22,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 .factory('Cardservice',function(){
     
-    var cardslist = ["Mehdi","khalid","Omar","Jalal","Abedelamtif","Nouradine"];
+
+    var cardslist = [
+      {
+        name:"said raslan",
+        titre:"Doctor",
+        img:"http://s.wat.tv/image/parmi-fondements-gens-sunnah_6fg0v_2tc59y.jpg",
+        city:"Monoufia",
+        country:"Egypt",
+        description:"He was born in the village of Subk Al Ahad, Ashmun, Munofiaa (Egypt)"
+      },
+      {
+        name:"Salhe alfawzane",
+        titre:"Doctor",
+        img:"http://vid.alarabiya.net/images/2014/03/18/2a94fefd-2080-47c9-b2ba-dc82fc9adafa/2a94fefd-2080-47c9-b2ba-dc82fc9adafa_16x9_600x338.jpg",
+        city:"Alriad",
+        country:"Saoudi arabic",
+        description:"According to his official biography at fatwa-online.com, Fawzan is from the family of Fawzan "
+      },
+      {
+        name:"falahe ismail",
+        titre:"Doctor",
+        city:"Kuwait",
+        country:"Kuwait",
+        img:"http://i.ytimg.com/vi/iAX_oHVjLac/0.jpg",
+        description:"The Shaykh began seeking legislative knowledge after having worked as an instructor of the English language. "
+      }
+    ];
 
   return{
     getAll:function(){
@@ -30,7 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     },
     getSelected:function(cardname){
       for (var i = 0; i < cardslist.length; i++) {
-        if (angular.equals(cardslist[i], cardname)) {
+        if (angular.equals(cardslist[i].name, cardname)) {
           return cardslist[i];
         }
       }
@@ -73,6 +99,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         'menuContent': {
           templateUrl: "templates/cardslist.html",
           controller: 'CardslistCtrl'
+        }
+      }
+    })
+
+    .state('app.new-card', {
+      url: "/new-card",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/new-card.html",
+          controller: 'NewcardCtrl'
         }
       }
     })

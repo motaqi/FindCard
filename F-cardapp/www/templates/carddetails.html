@@ -1,5 +1,13 @@
 <ion-view view-title="Cardsdetails">
   <ion-content>
-    <h1>{{card}}</h1>
+<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="{{card.img}}">
+    <h1>{{card.name}}</h1>
+    <h3>{{card.country}}</h3>
+    <h4>{{card.city}}</h4>
+    <p>{{card.titre}}</p>
+  </div>
   </ion-content>
 </ion-view>
