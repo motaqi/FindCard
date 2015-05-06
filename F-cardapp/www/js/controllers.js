@@ -43,12 +43,18 @@ angular.module('starter.controllers', [])
 
 
 .controller('CardslistCtrl', function($scope,Cardservice) {
-   $scope.cardslist = Cardservice.getAll();
+     $scope.cardslist = Cardservice.getAll();
+
+ $scope.delete = function(item) {
+    $scope.items.splice($scope.cardslist.indexOf(item), 1);
+  };
 })
 
 .controller('NewcardCtrl', function($scope) {
    
 })
+
+.controller('SearchCtrl' ,function(){})
 
 
 .controller('CarddetailsCtrl', function($scope, $stateParams, Cardservice) {

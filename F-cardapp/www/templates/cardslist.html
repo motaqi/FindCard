@@ -1,8 +1,9 @@
 <ion-view view-title="Cardslist">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="card in cardslist" href="#/app/cardslist/{{card.name}}">
-        {{card.name}}
+      <ion-item ng-repeat="card in cardslist" show-delete="true" can-swipe="true" href="#/app/cardslist/{{card.name}}">
+        {{card.name|uppercase}}
+        <ion-option-button class="button-assertive icon ion-trash-a" ng-click="delete(card)"></ion-option-button>
       </ion-item>
     </ion-list>
   </ion-content>
